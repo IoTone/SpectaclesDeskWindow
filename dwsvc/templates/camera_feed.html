@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">      
+        <title>Spectacles DWSVC</title>
+    </head>
+
+    <body>
+
+    <!-- Get the initial image. -->
+    <img id="frame" rotate="90" src="/dws" style="transform:rotate(0deg);">
+
+    <script>        
+        // Use an off-screen image to load the next frame.
+        var img = new Image();
+
+        // When it is loaded...
+        img.addEventListener("load", function() {
+
+            // Set the on-screen image to the same source. This should be instant because
+            // it is already loaded.
+            document.getElementById("frame").src = img.src;
+
+            // Schedule loading the next frame.
+            setTimeout(function() {
+                img.src = "/dws?" + (new Date).getTime();
+            }, 1000*1);  // 1000/15); // 15 FPS (more or less)
+        })
+
+        // Start the loading process.
+        img.src = "/dws?" + (new Date).getTime();
+    </script>
+    </body>
+</html>
