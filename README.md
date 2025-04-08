@@ -1,6 +1,6 @@
 # Overview
 
-Spectacles DeskWindow is a spatial desktop mirroring solution.  You can "peek" at what is going on with any desktop.  It is an old trick used over the years to get simple mirroring working on platforms that don't support a full blown mirroring protocol. 
+Spectacles DeskWindow is a spatial desktop mirroring solution.  You can "peek" at what is going on with any desktop.  It is an old trick used over the years to get simple mirroring working on platforms that don't support a full blown mirroring protocol. This is a first step PoC to show what is possible, and later versions will build up to progressively better approaches.
 
 ## Setup
 
@@ -26,11 +26,21 @@ The reason this approach is preferred is it is very stable.  The only downside i
 
 ### DesktopWindow Spectacles Lens
 
-TODO
+It is easiest if you search in the scene object view and search for WebView.  Edit the component in the property editor and set the URL to your runnel.
+
 
 ## Run
 
-TODO
+Launch the DeskWindow Lens.  If you have configured the URLs correctly and tunnel, you can see the video in your browser.
+
+## Known Issues
+
+- performance: this isn't intended to be a solution for commercial use.  It is a quick and dirty http based solution for mirroring a desktop.
+- security: obviously this is a bit of a security hole on whatever desktop you run this on.  It will be available to anyone who stumbled on the URL
+- reliability: tunnels are often flaky on a slow link.  "Beware".
+- complexity: tunnels can be a bit complicated.  
+- rotation: the rotation of the image may vary depending on the desktop system.  You may need to edit the template to chage the rotation.
+- https: Snap Specs don't support a whitelist for inesecure hosts.  
 
 ## Troubleshooting
 
