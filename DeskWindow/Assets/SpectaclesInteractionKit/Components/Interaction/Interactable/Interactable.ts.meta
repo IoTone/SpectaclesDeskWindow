@@ -1,0 +1,62 @@
+- !<AssetImportMetadata/b4f5f936-5d22-4d9e-a415-a82f2554f021>
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
+  PackageType: NotAPackage
+  AssetDataMap:
+    TypeScriptAsset: !<own> 4dbaada5-89aa-44bf-9ce8-f707888c5484
+  PackagePolicy: CannotBeUnpacked
+  DependentFiles:
+    []
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+  ExtraData:
+    {}
+- !<TypeScriptAssetData/4dbaada5-89aa-44bf-9ce8-f707888c5484>
+  Icon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: f5ccc8e2-4e8d-4daa-b65b-e5a48b6e0ee8
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    acceptableXDirections: false
+    acceptableYDirections: false
+    acceptableZDirections: false
+    allowMultipleInteractors: false
+    enableInstantDrag: false
+    enablePokeDirectionality: false
+    isScrollable: true
+    targetingMode: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - targetingMode: !<float> 3.000000
+      isScrollable: false
+      enableInstantDrag: false
+      allowMultipleInteractors: true
+      enablePokeDirectionality: false
+      acceptableXDirections: !<float> 3.000000
+      acceptableYDirections: !<float> 3.000000
+      acceptableZDirections: !<float> 3.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float targetingMode = 3 {"widget":"combobox", "values":[{"label":"Direct", "value":1}, {"label":"Indirect", "value":2}, {"label":"Direct/Indirect", "value":3}, {"label":"Poke", "value":4}, {"label":"All", "value":7}]}'
+    - "// @input bool enableInstantDrag {\"hint\":\"Enable this to allow the Interactable to instantly be dragged on trigger rather than obeying the Interactor's drag threshold.\"}"
+    - // @input bool isScrollable
+    - // @input bool allowMultipleInteractors = true
+    - '// @ui {"widget":"separator"}'
+    - // @input bool enablePokeDirectionality
+    - '// @input float acceptableXDirections = 3 {"label":"X", "widget":"combobox", "values":[{"label":"None", "value":0}, {"label":"Right", "value":1}, {"label":"Left", "value":2}, {"label":"All", "value":3}], "showIf":"enablePokeDirectionality"}'
+    - '// @input float acceptableYDirections = 3 {"label":"Y", "widget":"combobox", "values":[{"label":"None", "value":0}, {"label":"Up", "value":1}, {"label":"Down", "value":2}, {"label":"All", "value":3}], "showIf":"enablePokeDirectionality"}'
+    - '// @input float acceptableZDirections = 3 {"label":"Z", "widget":"combobox", "values":[{"label":"None", "value":0}, {"label":"Forward", "value":1}, {"label":"Back", "value":2}, {"label":"All", "value":3}], "showIf":"enablePokeDirectionality"}'
+  SvgIcon: ""
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000

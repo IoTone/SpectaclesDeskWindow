@@ -1,0 +1,62 @@
+- !<ObjectPrefab/b1395c13-c99f-4762-9d34-1ddd8f89c3fe>
+  PackagePath: ""
+  objects:
+    - !<own> b8c6295a-d9a9-4d7a-8de8-c08705c92551
+  LazyLoading: false
+  RetainAssets: true
+- !<Image/0b6890cb-5021-4e0e-842c-b6f9087d0d93>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: FillAndCut
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 01713792-69bf-4ea8-bb02-7db43c5d439a
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  Size:
+    x: !<float> 1.000000
+    y: !<float> 1.000000
+- !<SceneObject/b8c6295a-d9a9-4d7a-8de8-c08705c92551>
+  PrefabRemaps:
+    []
+  Name: WebPlane
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0b6890cb-5021-4e0e-842c-b6f9087d0d93
+    - !<own> e397b1e7-5cd6-4f82-98c8-bd1e49b81951
+- !<ColliderComponent/e397b1e7-5cd6-4f82-98c8-bd1e49b81951>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: false
+    Size: {x: 0.990000, y: 0.990000, z: 0.050000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false

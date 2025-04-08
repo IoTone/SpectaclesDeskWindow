@@ -1,0 +1,62 @@
+- !<NativePackageDescriptor/b923af31-750d-4c77-b96a-085a32878fc8>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 7
+    patch: 0
+    build: 25030304
+    type: Unset
+  Description: |+
+    Spectacles WebView Component
+    
+    *Note* Requires SpectaclesInteractionKit to be installed. 
+    *Note* SpectaclesInteractionKit and WebView should be in the project root directory. 
+    
+    Usage:
+    
+    The WebView component can be added to a sceneObject. This will create the necessary render mesh visuals and materials to display a webview. 
+    
+    The scale of a scene object will determine how large it is in the scene. 
+    
+    *Note* The aspect ratio of the WebView should match the XY scale aspect ratio to avoid squishing the visuals and hit zones of the WebView. Scale units can be considered cm when running on Spectacles. A scale of 60x80 would be approximately 60cm by 80 cm 
+    
+    *note* Any parent scene objects can apply their own scale which can also impact the actual scale of the WebView. 
+    
+    Inputs
+    
+    - Resolution
+    This is the web page resolution for web content in 2D pixels. This does not impact or relate to the overall 3D scene or the physical display resolution of the device. This can only be set before creation. 
+    
+    - URL *optional*
+    This is the starting URL of the webview. It may be left blank if the URL is not known at edit time and can be set through the scripting APIs instead. 
+    
+    - User-Agent *optional*
+    A custom user-agent can be set to allow for more targeted web content. If left blank, the default platform user-agent will be used. Each WebView can have their own user-agent.
+    
+    - Direct Touch mode
+    This allows users to use finger tracking to interact with the WebView. This would be similar to using a touch screen device like a phone or tablet. This does not disable indirect interactions using the cursor from a distance. 
+    
+    
+    
+  SvgIcon: ""
+  InternalVersion: 3
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 4
+  UpdateCheckpoint: 55
+  ExportUid: 1ae30c19-5e6d-4756-aa5d-501cff8f648a
+  ComponentUid: 6f316fec-c78d-4963-816b-ebedd9b42630
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: Web View
+    AssetId: 5nVUdGa4uOefwHXvlqd20
+    Hash: aa92d3833e2c8971f161602314561dcd
+    Version:
+      major: 0
+      minor: 0
+      patch: 4
+      build: 0
+  coreVersion: 301
+  clientVersion: 13.300000

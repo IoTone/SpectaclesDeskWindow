@@ -1,0 +1,42 @@
+studioVersion:
+  major: 5
+  minor: 7
+  patch: 2
+  build: 25030805
+  type: Public
+coreVersion: 301
+clientVersion: 13.300000
+updateCheckpoint: 55
+sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
+viewConfig:
+  simulation:
+    device: Spectacles (2024)
+    cameraFov: nan
+    fullFrameAspect: 0.666660
+    resolutionScale: 1.000000
+    viewport: Maximized
+    output: Live
+    stereoOutputEye: Center
+    deviceTypeOverride: Spectacles
+  cameraType: Front
+metaInfo:
+  hints:
+    []
+  tags:
+    []
+  lensName: DeskWindow
+  lensDescriptors:
+    - EXPERIMENTAL_API
+    - GEN_AI_ICON
+  lensApplicability:
+    - Front
+    - Back
+  lensClientCompatibilities:
+    - Spectacles
+  platformBundlesEnabled: false
+  iconHash: b45f478bc1fc1f957c7579ca4d86ffcf
+  videoPreviewHash: ""
+  fromTemplateName: Spectacles
+  fromTemplateUrl: Lens Studio 5.7.2.25030805
+  activationCamera: Front
+  sourceMapEnabled: false

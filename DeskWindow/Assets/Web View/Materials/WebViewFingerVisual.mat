@@ -1,0 +1,103 @@
+- !<Material/08a34f97-d28a-4460-bfbc-9722e131913d>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> 170036ec-2c8f-4539-aa22-d390ffb5e5d6
+- !<PassInfo/170036ec-2c8f-4539-aa22-d390ffb5e5d6>
+  CachedProperties:
+    []
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: PremultipliedAlphaAuto
+  Properties:
+    Port_Amount_N009:
+      typeIdx: 1
+      value: 4.000000
+    Port_Exponent_N003:
+      typeIdx: 1
+      value: 2.000000
+    Port_Input0_N010:
+      typeIdx: 1
+      value: 1.000000
+    Port_Input0_N011:
+      typeIdx: 1
+      value: 0.200000
+    Port_Input0_N014:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input1_N011:
+      typeIdx: 1
+      value: 0.300000
+    Port_Input1_N013:
+      typeIdx: 4
+      value: {x: 1.000000, y: 0.893355, z: 0.358633}
+    Port_Input1_N014:
+      typeIdx: 1
+      value: 0.800000
+    Port_Input1_N018:
+      typeIdx: 1
+      value: -0.500000
+    Port_Input1_N020:
+      typeIdx: 1
+      value: 400.000000
+    Port_Input1_N023:
+      typeIdx: 1
+      value: 0.060000
+    Port_Input1_N024:
+      typeIdx: 1
+      value: 0.300000
+    Port_Input1_N027:
+      typeIdx: 1
+      value: 1.330000
+    Port_Input1_N031:
+      typeIdx: 1
+      value: 1.330000
+    Port_Input1_N032:
+      typeIdx: 1
+      value: 0.050000
+    Port_Input1_N034:
+      typeIdx: 1
+      value: 3.141500
+    Port_Input1_N035:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input1_N036:
+      typeIdx: 1
+      value: 0.900000
+    Port_Intensity_N003:
+      typeIdx: 1
+      value: 2.000000
+    Port_Multiplier_N019:
+      typeIdx: 1
+      value: 4.000000
+    Port_Multiplier_N028:
+      typeIdx: 1
+      value: -0.990000
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    alpha:
+      typeIdx: 1
+      value: 0.900000
+    baseColor:
+      typeIdx: 4
+      value: {x: 0.935531, y: 0.924407, z: 0.868711}
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+    trigger:
+      typeIdx: 1
+      value: 0.000000
+  Pass: !<reference> ec7d928d-1d8a-482a-ad02-8456eee4569b
