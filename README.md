@@ -2,6 +2,8 @@
 
 Spectacles DeskWindow is a spatial desktop mirroring solution.  You can "peek" at what is going on with any desktop.  It is an old trick used over the years to get simple mirroring working on platforms that don't support a full blown mirroring protocol. This is a first step PoC to show what is possible, and later versions will build up to progressively better approaches.
 
+<img width="620" alt="Image" src="https://github.com/user-attachments/assets/d7eae522-c7a0-41dc-aa85-e1cf3d9fda40" />
+
 Uses:
 
 - Watch your stocks (lol whelp)
