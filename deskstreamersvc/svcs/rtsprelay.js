@@ -22,9 +22,11 @@ app.get('/', (req, res) =>
 
   <script src='${scriptUrl}'></script>
   <script>
+    // NOTE: change below to ws:// if you are running local 
+    // and not using tunnels
     // url: 'ws://' + location.host + '/api/stream',
     loadPlayer({
-      url: 'wss://' + location.host + '/api/stream',
+      url: 'wws://' + location.host + '/api/stream',
       canvas: document.getElementById('canvas')
     });
   </script>
