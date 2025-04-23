@@ -1964,7 +1964,7 @@
   PrefabRemaps:
     []
   Name: "WebView [CHANGE THE URL TO YOUR TUNNEL]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -2680,6 +2680,7 @@
     - 7dd7b59e-0498-4d79-b48f-408bfc9b867f: c72846aa-76b0-4666-a079-27282d9872ae
     - 7e455587-40a7-4448-aa1a-706fbcd9edff: fc15b487-58cb-4918-a56d-fa07b44d5c54
     - 829090a6-36dc-47cd-b7e6-09bcd22de9a8: ff232887-8a8e-4e85-b45e-8c0cb2bb1d90
+    - 83150c90-b410-457c-9e02-138e2f8bacf0: 7e0e7748-aecc-497a-ae87-994e715cfc43
     - 8386367f-8870-40ff-816f-48c32b1a46d8: 07523073-c85e-4964-967b-11d909e68e13
     - 85645730-9071-4836-924d-c16edfd4bdf8: 3e511368-f7e6-4909-999c-ca0c8b3cf71e
     - 85a3f154-1f27-4f43-a0a4-21f8261a2b79: 878c9ef3-eeb9-4c71-9fe6-de43c756c6a7
@@ -2750,6 +2751,7 @@
     - aac2f699-ace4-4377-bd93-ddd47784bf9a: 050576d5-df35-43b4-baed-86224543f9b9
     - ab0f50de-402f-41a9-8556-76f83c93f647: 955f0db4-83dd-4c94-aef1-69618d682c6f
     - ab689200-abb7-41ef-9870-e904dbef7a02: 58a46b4a-f6b3-4d23-ac38-190b52bdd799
+    - ad676b09-6fc7-4e80-b899-bbd4352f7079: 0f97feeb-8c85-4069-9719-7837ba49471a
     - adcc168f-e3b6-4a7d-9d55-f29cb2d81731: 995fcef1-3e67-4590-808a-621f163f8959
     - ae56177d-3908-4b0d-bcda-630836c538ef: 2d938b98-1367-4121-b49b-bbcdbb5bbbf2
     - ae6059d5-5c2e-448d-b102-58bcc6e9026b: e9750877-ff8c-42bc-8df7-26b7512cd8c2
@@ -6274,6 +6276,7 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 241112bf-d780-4157-92db-178162c3e6e6
+    - !<own> 83150c90-b410-457c-9e02-138e2f8bacf0
   Components:
     []
 - !<SceneObject/6b8fea87-06c6-40c7-8dcf-b013740eaa0f>
@@ -7520,6 +7523,21 @@
     - !<own> be7db39a-9e3f-4fc2-ac29-08c3846c1d46
     - !<own> bae3eb26-643a-4138-a20e-3419df5b6f87
     - !<own> bd97f98f-b454-417d-9690-e8e50b856226
+- !<SceneObject/83150c90-b410-457c-9e02-138e2f8bacf0>
+  PrefabRemaps:
+    []
+  Name: "WebView [CHANGE THE URL TO YOUR TUNNEL / RTSP]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 60.000000, y: 80.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ad676b09-6fc7-4e80-b899-bbd4352f7079
 - !<ScreenTransform/8386367f-8870-40ff-816f-48c32b1a46d8>
   PrefabRemaps:
     []
@@ -10060,6 +10078,26 @@
     - !<own> 12676edb-b1e8-4c55-b171-c7b31c323624
   Components:
     []
+- !<ScriptComponent/ad676b09-6fc7-4e80-b899-bbd4352f7079>
+  PrefabRemaps:
+    []
+  Name: WebView
+  Enabled: true
+  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
+  ScriptInputsDefault:
+    resolution: true
+    poke: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      url: "https://YOURSECURETUNNEL.net/"
+      resolution: !<Vec2> {x: 600.000000, y: 800.000000}
+      userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+      poke: true
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/adcc168f-e3b6-4a7d-9d55-f29cb2d81731>
   PrefabRemaps:
     []

@@ -662,6 +662,26 @@
     - !<own> 9ffcde47-2ae5-43ab-92ac-a76f8a8aeefe
     - !<own> a7eaafe2-9028-4171-aed1-3eb95544db88
     - !<own> cf618fda-8253-476b-9510-b5ebcdd4cf5c
+- !<ScriptComponent/0f97feeb-8c85-4069-9719-7837ba49471a>
+  PrefabRemaps:
+    []
+  Name: WebView
+  Enabled: true
+  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
+  ScriptInputsDefault:
+    resolution: true
+    poke: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      url: "https://YOURSECURETUNNEL.net/"
+      resolution: !<Vec2> {x: 600.000000, y: 800.000000}
+      userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+      poke: true
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/1123fd03-49d4-4299-86ae-77815e76c397>
   PrefabRemaps:
     []
@@ -3576,6 +3596,7 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> b75f2a37-5580-4e6b-896c-f752cc3ce7db
+    - !<own> 7e0e7748-aecc-497a-ae87-994e715cfc43
   Components:
     []
 - !<ScriptComponent/49b99126-17e7-41d6-8e6a-5f9fc89777b8>
@@ -5287,7 +5308,7 @@
     {}
   ScriptInputs:
     "":
-      url: "https://1625caa3ae31.ngrok.app/camerafeed"
+      url: "https://YOURTUNNELURLngok.app/camerafeed"
       resolution: !<Vec2> {x: 600.000000, y: 800.000000}
       userAgent: ""
       poke: true
@@ -5743,6 +5764,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/7e0e7748-aecc-497a-ae87-994e715cfc43>
+  PrefabRemaps:
+    []
+  Name: "WebView [CHANGE THE URL TO YOUR TUNNEL / RTSP]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 60.000000, y: 80.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0f97feeb-8c85-4069-9719-7837ba49471a
 - !<ScriptComponent/7ee5cfd6-7f32-491a-afd0-ad2c420d073f>
   PrefabRemaps:
     []
@@ -7824,7 +7860,7 @@
   PrefabRemaps:
     []
   Name: "WebView [CHANGE THE URL TO YOUR TUNNEL]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
