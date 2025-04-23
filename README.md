@@ -21,15 +21,37 @@ Demo: https://youtu.be/sr250zFttos
 
 ## Setup
 
-- You need to run dwscv, see below
+There are two ways to run this stack and two operating modes possible:
+
+Complexity/Performance:
+- easy setup/low performance ~1-3fps,non standard
+- high performance, complex set up, 15-25fps,standards focused
+
+Operating modes:
+- camera streaming (only possible in high performance setup)
+- desktop streaming (no UI control, audio possible on high performance setup)
+
+Choose your path
+
+
+### Easy
+
+- You need to run **dwscv**, see below
 - You need a tunnel to allow a secure HTTPS connection (see below)
 - You need to get your tunnel URL and put it into the "WebView" component in your scene graph
-- After that you can build and run
+- After that you can build and run the lens on your Spectacles
+
+### Advanced
+
+- You need to run the **desktreamsvc** setup
+- You need a tunnel to allow a secure HTTPS connection (see below)
+- You need to get your tunnel URL and put it into the "WebView" component in your scene graph
+- After that you can build and run the lens on your Spectacles
 
 
 ## Build
 
-### dwsvc
+### dwsvc (easy)
 
 On time setup: virtualenv menv && . ./menv/bin/activate && pip install -r requirements.txt
 
@@ -38,6 +60,38 @@ Run: python run.py
 You can check your service running on localhost:5002/camerafeed in a regular browser.
 
 To run on the spectacles, you need to set up a tunnel.  See the next step.
+
+### deskstreamsvc (advanced)
+
+There is a one time setup, really nothing to build unless you decide to build your dependencies from scratch (maybe in a Yocto Linux setup). 
+
+The directory deskstreamsvc contains different platforms: mac, windows, linux. First thing to do is make sure you have node20 installed.  I use nvm for this, but on linux you might use "n" instead.
+
+Note: on ARM devices you will probably need to modify the setup.  You can hire me if you need help integrating this into your projects :p .  The Linux setup will be Ubuntu centric, however, behind the scenes I will have this running on some other more obscure Linux ARM platforms as well (think wearable devices).
+
+When it comes to FFMPEG, you really need to think about how you install it, or if you build it from scratch, or if you take the GPL version or the LGPL version.  I cannot make those decisions for anyone.  For mac, the recommendation is to install from brew.  On the other platforms, the recommendation is to grab a pre-built binary from here:
+
+https://github.com/BtbN/FFmpeg-Builds/releases
+
+To really understand how and why you will use ffmpeg, you can read more.  You need to read more if you are on Linux.  Other platforms you may be able to get by without reading.  
+
+For Webcam setup: https://trac.ffmpeg.org/wiki/Capture/Webcam
+
+For Desktop Screen Capture, read through my notes here: https://github.com/IoTone/SpectaclesDeskWindow/issues/5#issuecomment-2822642502
+
+Note: the devices, especially USB devices like webcams, can change their mapping between boots.  So you may need to reconfigure your scripts between boots.
+
+The order to run things for camera streaming:
+
+- run_mediamtx.sh
+- run_ffmpeg_camera.sh
+- run_rtsprelay.sh
+
+The order to run things for desktop streaming:
+
+- run_mediamtx.sh
+- run_ffmpeg_screencapture.sh
+- run_rtsprelay.sh
 
 ### Tunnel
 
