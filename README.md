@@ -12,6 +12,7 @@ Uses:
 - Access a desktop only application
 
 Demo: https://youtu.be/sr250zFttos
+Demo2: https://youtu.be/Dx2J5Gqqru0
 
 ## Hardware Requirements
 
@@ -86,12 +87,20 @@ The order to run things for camera streaming:
 - run_mediamtx.sh
 - run_ffmpeg_camera.sh
 - run_rtsprelay.sh
+- manually run your tunnel (see below)
 
 The order to run things for desktop streaming:
 
 - run_mediamtx.sh
 - run_ffmpeg_screencapture.sh
 - run_rtsprelay.sh
+- manually run your tunnel (see below)
+
+In both cases, check out your setup with your browser:
+
+http://localhost:8888
+and
+http://localhost:9000
 
 ### Tunnel
 
