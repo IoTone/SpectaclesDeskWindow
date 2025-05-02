@@ -57,6 +57,10 @@ Choose your path
 
 On time setup: virtualenv menv && . ./menv/bin/activate && pip install -r requirements.txt
 
+On a mac, if you attempt to run screencapture or things like that from inside of scripts, Terminal or iTerm may pop up and request permissions.  See explanation and how to fix here: https://ladedu.com/how-to-take-a-screenshot-from-mac-terminal-screencapture/
+
+On Linux, it is worth trying to see if weston-screenshooter command works.  If it complains with a "Permission Denied.  Debug Protocol must be enabled", jump over to here to see how to fix it: https://gitlab.freedesktop.org/wayland/weston/-/issues/773 .  Currently dwsvc requires wayland to run, and assumes the weston window manager.
+
 Run: python dwsvc.py
 
 You can check your service running on localhost:5002/camerafeed in a regular browser.
