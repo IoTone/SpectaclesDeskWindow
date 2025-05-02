@@ -7744,7 +7744,7 @@
     {}
   ScriptInputs:
     "":
-      url: "https://mtk-genio.quokka-hippocampus.ts.net/"
+      url: "https://MYURLTUNNEL/camerafeed"
       resolution: !<Vec2> {x: 600.000000, y: 800.000000}
       userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
       poke: true

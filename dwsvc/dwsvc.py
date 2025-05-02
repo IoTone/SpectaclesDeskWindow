@@ -58,6 +58,12 @@ def dws():
         thisos = platform.system()
         if g_imagecounter == g_maximagcount:
             # Reset to 0 and cleanup
+            if thisos == "Linux":
+                # issue #3
+                # Do an ugly cleanup
+                # Do system os things in the shell because python sucks at these things
+                cmd = f"rm wayland-screenshot*.png".split()
+                proc = subprocess.call(cmd, shell=False)
             g_imagecounter = 0
         else:
             g_imagecounter = g_imagecounter+1
