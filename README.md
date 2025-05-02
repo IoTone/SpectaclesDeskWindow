@@ -123,6 +123,14 @@ The reason this approach is preferred is it is very stable.  The only downside i
 
 It is easiest if you search in the scene object view and search for WebView.  Edit the component in the property editor and set the URL to your runnel.
 
+Search through the Scene Hierarchy for a component called "DeskViewUI".  Under there there is a WebView entitled: WebView [CHANGE THE URL TO YOUR TUNNEL / RTSP]
+
+You can edit the URL section of this comonent to be:
+
+- for dwsvc: https://MYURLTUNNEL/camerafeed
+- for deskstreamsvc: https://MYURLTUNNEL
+
+Unfortunately the setups vary, and your URL for your tunnel might include a port number.  I had some problems with the tunnel if I exposed it on a non-standard port.
 
 ## Run
 
