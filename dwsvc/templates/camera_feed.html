@@ -24,7 +24,7 @@
             // Schedule loading the next frame.
             setTimeout(function() {
                 img.src = "/dws?" + (new Date).getTime();
-            }, 1000*1);  // 1000/15); // 15 FPS (more or less)
+            }, 1000/2);  // 1000/15); // 15 FPS (more or less)
         })
 
         // Start the loading process.

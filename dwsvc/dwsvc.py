@@ -65,7 +65,10 @@ def dws():
         if thisos == "Darwin":
             # issue #11,#9
             # cmd = f"/usr/sbin/screencapture -tpng -R 0,0,800,600 -x mac-screencapture-{g_imagecounter}.png".split()
+            # cmd = f"/usr/sbin/screencapture -tpng -x mac-screencapture-{g_imagecounter}.png".split()
             cmd = f"/usr/sbin/screencapture -tpng -x mac-screencapture-{g_imagecounter}.png".split()
+            proc = subprocess.call(cmd, shell=False)
+            cmd = f"sips --resampleWidth 1024 mac-screencapture-{g_imagecounter}.png".split()
             proc = subprocess.call(cmd, shell=False)
         elif thisos == "Linux":
             proc = subprocess.Popen("/usr/bin/weston-screenshooter")
