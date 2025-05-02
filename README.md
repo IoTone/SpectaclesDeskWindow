@@ -69,7 +69,11 @@ To run on the spectacles, you need to set up a tunnel.  See the next step.
 
 ### deskstreamsvc (advanced)
 
-There is a one time setup, really nothing to build unless you decide to build your dependencies from scratch (maybe in a Yocto Linux setup). 
+There is a one time setup, really nothing to build unless you decide to build your dependencies from scratch (maybe in a Yocto Linux setup).   The script used to pull dependencies is called:
+
+setup_deps.sh
+
+For linux arm64 systems, it is called setup_deps_aarch64.sh
 
 The directory deskstreamsvc contains different platforms: mac, windows, linux. First thing to do is make sure you have node20 installed.  I use nvm for this, but on linux you might use "n" instead.
 
