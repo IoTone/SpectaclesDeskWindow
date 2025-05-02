@@ -36,6 +36,13 @@ app = Flask(__name__)
 def current_milli_time():
     return round(time.time() * 1000)
 
+#
+# Global variables
+#
+global g_maximagecount
+g_maximagcount = 1000
+global g_imagecounter
+g_imagecounter = 0
 
 
 @app.route("/")
@@ -44,10 +51,21 @@ def home():
 
 @app.route("/dws")
 def dws():
+    global g_maximagecount
+    global g_imagecounter
+
     try:
         thisos = platform.system()
+        if g_imagecounter == g_maximagcount:
+            # Reset to 0 and cleanup
+            g_imagecounter = 0
+        else:
+            g_imagecounter = g_imagecounter+1
+
         if thisos == "Darwin":
-            cmd = "/usr/sbin/screencapture -tpng -R 0,0,800,600 -x mac-screencapture.png".split()
+            # issue #11,#9
+            # cmd = f"/usr/sbin/screencapture -tpng -R 0,0,800,600 -x mac-screencapture-{g_imagecounter}.png".split()
+            cmd = f"/usr/sbin/screencapture -tpng -x mac-screencapture-{g_imagecounter}.png".split()
             proc = subprocess.call(cmd, shell=False)
         elif thisos == "Linux":
             proc = subprocess.Popen("/usr/bin/weston-screenshooter")
