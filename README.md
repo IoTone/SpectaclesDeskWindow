@@ -57,7 +57,7 @@ Choose your path
 
 On time setup: virtualenv menv && . ./menv/bin/activate && pip install -r requirements.txt
 
-Run: python run.py
+Run: python dwsvc.py
 
 You can check your service running on localhost:5002/camerafeed in a regular browser.
 
