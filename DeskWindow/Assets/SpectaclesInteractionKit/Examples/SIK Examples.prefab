@@ -694,7 +694,7 @@
     {}
   ScriptInputs:
     "":
-      url: "https://YOUR_RTSP_TUNNEL.net/"
+      url: "https://MY_RTSP_TUNNEL/"
       resolution: !<Vec2> {x: 600.000000, y: 800.000000}
       userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
       poke: true
@@ -2245,7 +2245,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 80.000000, z: 1.000000}
+    position: {x: 0.000000, y: 16.000000, z: 1.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -5406,7 +5406,7 @@
     {}
   ScriptInputs:
     "":
-      url: "https://YOURTUNNELURLngok.app/camerafeed"
+      url: realityair.quokka-hippocampus.ts.net/camerafeed
       resolution: !<Vec2> {x: 600.000000, y: 800.000000}
       userAgent: ""
       poke: true
@@ -5866,7 +5866,7 @@
   PrefabRemaps:
     []
   Name: "WebView deskstreamsvc [CHANGE URL TO YOUR TUNNEL / RTSP]"
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -6505,7 +6505,7 @@
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 86
+  FontSize: 92
   Font: !<reference> 709203b6-8b83-40d7-8dda-e5adc4fd2875
   LayoutRect:
     left: -7.500000
@@ -8113,7 +8113,7 @@
   PrefabRemaps:
     []
   Name: "WebView dwsvc [CHANGE THE URL TO YOUR TUNNEL]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
