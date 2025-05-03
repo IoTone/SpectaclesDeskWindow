@@ -1975,7 +1975,7 @@
 - !<SceneObject/241112bf-d780-4157-92db-178162c3e6e6>
   PrefabRemaps:
     []
-  Name: ww
+  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL]"
   Enabled: true
   Layers: 1
   LocalTransform:
