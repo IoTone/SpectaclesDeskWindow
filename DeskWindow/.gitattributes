@@ -24,12 +24,15 @@ Assets/**/*.yaml !filter !diff !merge text
 
 Assets/**/*.meta !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 
+Assets/**/*.aiPack !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.animationAsset !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.animationCurveTrack !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.animationLayer !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.animationMixerLayer !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
+Assets/**/*.asrModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.audioOutput !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.bitmojiModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
+Assets/**/*.bluetoothCentralModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.bodyDepthTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.bodyInstanceSegmentationTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.bodyMesh !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
@@ -52,6 +55,7 @@ Assets/**/*.faceCropTexture !filter !diff !merge text linguist-language=yaml mer
 Assets/**/*.faceImagePickerTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.faceTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.faceTrackingModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
+Assets/**/*.faceTrackingScope !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.facelessTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.facemesh !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.filter !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
@@ -100,6 +104,7 @@ Assets/**/*.textureTrackingScope !filter !diff !merge text linguist-language=yam
 Assets/**/*.upperBodyMesh !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.upperBodyTracking3D !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.voiceMLModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
+Assets/**/*.worldDepthTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.worldQueryModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.worldSettings !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.worldUnderstandingModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
