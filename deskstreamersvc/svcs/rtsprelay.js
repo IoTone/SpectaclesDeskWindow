@@ -26,7 +26,7 @@ app.get('/', (req, res) =>
     // and not using tunnels
     // url: 'ws://' + location.host + '/api/stream',
     loadPlayer({
-      // url: 'wws://' + location.host + '/api/stream',
+      // url: 'ws://' + location.host + '/api/stream',
       url: 'wss://' + location.host + '/api/stream',
       canvas: document.getElementById('canvas')
     });

@@ -1420,6 +1420,26 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/1997e093-9dc9-4eee-a341-a79221e1def5>
+  PrefabRemaps:
+    []
+  Name: WebView
+  Enabled: true
+  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
+  ScriptInputsDefault:
+    userAgent: true
+    poke: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      url: "http://66.37.4.122:5173/"
+      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
+      userAgent: ""
+      poke: true
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/1a9777fb-0864-49b8-9af9-9472c593219f>
   PrefabRemaps:
     []
@@ -1942,7 +1962,7 @@
   PrefabRemaps:
     []
   Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL]"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3769,6 +3789,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/45458a75-ce13-4571-b9ce-94db26afc1bd>
+  PrefabRemaps:
+    []
+  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL] 1"
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 12.000000, y: 16.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9f2924fe-3cc3-4d4b-bbf9-f47b4d1ae85c
 - !<SceneObject/455d7533-3b75-452f-89bb-0e1ef8a27df9>
   PrefabRemaps:
     []
@@ -5535,6 +5570,8 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 241112bf-d780-4157-92db-178162c3e6e6
+    - !<own> 45458a75-ce13-4571-b9ce-94db26afc1bd
+    - !<own> 9caee126-f2d1-4372-a0d8-4d0c95467614
     - !<own> 83150c90-b410-457c-9e02-138e2f8bacf0
     - !<own> 9f350777-7a78-4446-a824-ace1cc0d02bf
     - !<own> 8c23c084-25c8-49c1-b304-91a096a0c59c
@@ -5971,6 +6008,7 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
+    - !<own> ba63d740-5bc9-4574-90d8-02a0469d6ded
     - !<own> bd250b6d-8c34-45ba-aced-ebc4ce9fc93e
   Components:
     []
@@ -6129,6 +6167,26 @@
     - !<own> 0ea1ea2f-f52b-4695-9a93-accb7227c6f2
   Components:
     []
+- !<ScriptComponent/6e0daf57-775e-46ba-ac5a-f498c751f5db>
+  PrefabRemaps:
+    []
+  Name: WebView
+  Enabled: true
+  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
+  ScriptInputsDefault:
+    userAgent: true
+    poke: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      url: "https://vs7142.quokka-hippocampus.ts.net:9000"
+      resolution: !<Vec2> {x: 800.000000, y: 600.000000}
+      userAgent: ""
+      poke: true
+  ScriptTypes:
+    "":
+      {}
 - !<ColliderComponent/6e19ad49-676a-45dd-bf53-f15734c6fd3b>
   PrefabRemaps:
     []
@@ -6599,15 +6657,14 @@
   Enabled: true
   ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
   ScriptInputsDefault:
-    resolution: true
     userAgent: true
     poke: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      url: "https://MY_TUNNE.net/camerafeed"
-      resolution: !<Vec2> {x: 600.000000, y: 800.000000}
+      url: "https://vs7142.quokka-hippocampus.ts.net:9000"
+      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
       userAgent: ""
       poke: true
   ScriptTypes:
@@ -8641,6 +8698,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/9caee126-f2d1-4372-a0d8-4d0c95467614>
+  PrefabRemaps:
+    []
+  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL] 2"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 12.000000, y: 16.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1997e093-9dc9-4eee-a341-a79221e1def5
 - !<SceneObject/9dc93b02-8797-4f30-be2c-2900453c0630>
   PrefabRemaps:
     []
@@ -8731,6 +8803,26 @@
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/9f2924fe-3cc3-4d4b-bbf9-f47b4d1ae85c>
+  PrefabRemaps:
+    []
+  Name: WebView
+  Enabled: true
+  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
+  ScriptInputsDefault:
+    userAgent: true
+    poke: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      url: "https://rtxb.biz"
+      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
+      userAgent: ""
+      poke: true
   ScriptTypes:
     "":
       {}
@@ -9852,14 +9944,13 @@
   Enabled: true
   ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
   ScriptInputsDefault:
-    resolution: true
     poke: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       url: "https://MY_RTSP_TUNNEL/"
-      resolution: !<Vec2> {x: 600.000000, y: 800.000000}
+      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
       userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
       poke: true
   ScriptTypes:
@@ -10549,6 +10640,21 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<SceneObject/ba63d740-5bc9-4574-90d8-02a0469d6ded>
+  PrefabRemaps:
+    []
+  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -35.000000, y: -30.000000, z: -200.000000}
+    rotation: {x: 0.000000, y: 45.000000, z: 0.000000}
+    scale: {x: 144.000000, y: 256.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6e0daf57-775e-46ba-ac5a-f498c751f5db
 - !<ScriptComponent/bae3eb26-643a-4138-a20e-3419df5b6f87>
   PrefabRemaps:
     []
@@ -10806,7 +10912,7 @@
   ScriptInputs:
     "":
       autoShowHide: false
-      innerSize: !<Vec2> {x: 16.000000, y: 32.000000}
+      innerSize: !<Vec2> {x: 32.000000, y: 16.000000}
       border: !<float> 4.000000
       constantPadding: !<Vec2> {x: 0.000000, y: 0.000000}
       allowScaling: true
