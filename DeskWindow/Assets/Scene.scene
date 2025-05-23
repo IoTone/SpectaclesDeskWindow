@@ -1433,7 +1433,7 @@
     {}
   ScriptInputs:
     "":
-      url: "http://66.37.4.122:5173/"
+      url: "https://vs7142.quokka-hippocampus.ts.net:8443/"
       resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
       userAgent: ""
       poke: true
@@ -1958,21 +1958,6 @@
     - !<own> eb0acfe9-cf8f-45e7-9c46-1c986e040bcd
   Components:
     []
-- !<SceneObject/241112bf-d780-4157-92db-178162c3e6e6>
-  PrefabRemaps:
-    []
-  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL]"
-  Enabled: false
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 12.000000, y: 16.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 734b87ef-6182-4719-b71d-1e2e100c328f
 - !<AnimationPlayer/24a30fe3-39ed-4044-86c8-8c779fd112de>
   PrefabRemaps:
     []
@@ -3789,21 +3774,6 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/45458a75-ce13-4571-b9ce-94db26afc1bd>
-  PrefabRemaps:
-    []
-  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL] 1"
-  Enabled: false
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 12.000000, y: 16.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 9f2924fe-3cc3-4d4b-bbf9-f47b4d1ae85c
 - !<SceneObject/455d7533-3b75-452f-89bb-0e1ef8a27df9>
   PrefabRemaps:
     []
@@ -5569,8 +5539,6 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 241112bf-d780-4157-92db-178162c3e6e6
-    - !<own> 45458a75-ce13-4571-b9ce-94db26afc1bd
     - !<own> 9caee126-f2d1-4372-a0d8-4d0c95467614
     - !<own> 83150c90-b410-457c-9e02-138e2f8bacf0
     - !<own> 9f350777-7a78-4446-a824-ace1cc0d02bf
@@ -6180,8 +6148,8 @@
     {}
   ScriptInputs:
     "":
-      url: "https://vs7142.quokka-hippocampus.ts.net:9000"
-      resolution: !<Vec2> {x: 800.000000, y: 600.000000}
+      url: "https://vs7142.quokka-hippocampus.ts.net:8443"
+      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
       userAgent: ""
       poke: true
   ScriptTypes:
@@ -6647,26 +6615,6 @@
     "":
       renderMeshVisual: !<reference.RenderMeshVisual> 915e98e1-e83c-425a-8c7c-ea6a8e8e7b37
       knobObject: !<reference.SceneObject> 4edb7400-0310-4f46-8b54-70bb3ea16f70
-  ScriptTypes:
-    "":
-      {}
-- !<ScriptComponent/734b87ef-6182-4719-b71d-1e2e100c328f>
-  PrefabRemaps:
-    []
-  Name: WebView
-  Enabled: true
-  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
-  ScriptInputsDefault:
-    userAgent: true
-    poke: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      url: "https://vs7142.quokka-hippocampus.ts.net:9000"
-      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
-      userAgent: ""
-      poke: true
   ScriptTypes:
     "":
       {}
@@ -7280,7 +7228,7 @@
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 12.000000, y: 16.000000, z: 1.000000}
+    scale: {x: 102.400002, y: 76.800003, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -8701,13 +8649,13 @@
 - !<SceneObject/9caee126-f2d1-4372-a0d8-4d0c95467614>
   PrefabRemaps:
     []
-  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL] 2"
+  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL]"
   Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 12.000000, y: 16.000000, z: 1.000000}
+    scale: {x: 102.400002, y: 76.800003, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -8803,26 +8751,6 @@
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-  ScriptTypes:
-    "":
-      {}
-- !<ScriptComponent/9f2924fe-3cc3-4d4b-bbf9-f47b4d1ae85c>
-  PrefabRemaps:
-    []
-  Name: WebView
-  Enabled: true
-  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
-  ScriptInputsDefault:
-    userAgent: true
-    poke: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      url: "https://rtxb.biz"
-      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
-      userAgent: ""
-      poke: true
   ScriptTypes:
     "":
       {}
@@ -10643,13 +10571,13 @@
 - !<SceneObject/ba63d740-5bc9-4574-90d8-02a0469d6ded>
   PrefabRemaps:
     []
-  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL]"
-  Enabled: true
+  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL] - experimental fixed"
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: -35.000000, y: -30.000000, z: -200.000000}
     rotation: {x: 0.000000, y: 45.000000, z: 0.000000}
-    scale: {x: 144.000000, y: 256.000000, z: 1.000000}
+    scale: {x: 102.400002, y: 76.800003, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -10895,9 +10823,7 @@
   Enabled: true
   ScriptAsset: !<reference> 94ea82ba-1d42-4617-b71f-c92262f5960b
   ScriptInputsDefault:
-    border: true
     constantPadding: true
-    allowScaling: true
     autoScaleContent: true
     relativeZ: true
     isContentInteractable: true
@@ -10912,10 +10838,10 @@
   ScriptInputs:
     "":
       autoShowHide: false
-      innerSize: !<Vec2> {x: 32.000000, y: 16.000000}
-      border: !<float> 4.000000
+      innerSize: !<Vec2> {x: 15.000000, y: 15.000000}
+      border: !<float> 50.000000
       constantPadding: !<Vec2> {x: 0.000000, y: 0.000000}
-      allowScaling: true
+      allowScaling: false
       autoScaleContent: true
       relativeZ: false
       isContentInteractable: false
