@@ -1420,6 +1420,26 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/1997e093-9dc9-4eee-a341-a79221e1def5>
+  PrefabRemaps:
+    []
+  Name: WebView
+  Enabled: true
+  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
+  ScriptInputsDefault:
+    userAgent: true
+    poke: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      url: "https://vs7142.quokka-hippocampus.ts.net:8443/"
+      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
+      userAgent: ""
+      poke: true
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/1a9777fb-0864-49b8-9af9-9472c593219f>
   PrefabRemaps:
     []
@@ -1938,21 +1958,6 @@
     - !<own> eb0acfe9-cf8f-45e7-9c46-1c986e040bcd
   Components:
     []
-- !<SceneObject/241112bf-d780-4157-92db-178162c3e6e6>
-  PrefabRemaps:
-    []
-  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL]"
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 12.000000, y: 16.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 734b87ef-6182-4719-b71d-1e2e100c328f
 - !<AnimationPlayer/24a30fe3-39ed-4044-86c8-8c779fd112de>
   PrefabRemaps:
     []
@@ -5534,7 +5539,7 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 241112bf-d780-4157-92db-178162c3e6e6
+    - !<own> 9caee126-f2d1-4372-a0d8-4d0c95467614
     - !<own> 83150c90-b410-457c-9e02-138e2f8bacf0
     - !<own> 9f350777-7a78-4446-a824-ace1cc0d02bf
     - !<own> 8c23c084-25c8-49c1-b304-91a096a0c59c
@@ -5971,6 +5976,7 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
+    - !<own> ba63d740-5bc9-4574-90d8-02a0469d6ded
     - !<own> bd250b6d-8c34-45ba-aced-ebc4ce9fc93e
   Components:
     []
@@ -6129,6 +6135,26 @@
     - !<own> 0ea1ea2f-f52b-4695-9a93-accb7227c6f2
   Components:
     []
+- !<ScriptComponent/6e0daf57-775e-46ba-ac5a-f498c751f5db>
+  PrefabRemaps:
+    []
+  Name: WebView
+  Enabled: true
+  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
+  ScriptInputsDefault:
+    userAgent: true
+    poke: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      url: "https://vs7142.quokka-hippocampus.ts.net:8443"
+      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
+      userAgent: ""
+      poke: true
+  ScriptTypes:
+    "":
+      {}
 - !<ColliderComponent/6e19ad49-676a-45dd-bf53-f15734c6fd3b>
   PrefabRemaps:
     []
@@ -6589,27 +6615,6 @@
     "":
       renderMeshVisual: !<reference.RenderMeshVisual> 915e98e1-e83c-425a-8c7c-ea6a8e8e7b37
       knobObject: !<reference.SceneObject> 4edb7400-0310-4f46-8b54-70bb3ea16f70
-  ScriptTypes:
-    "":
-      {}
-- !<ScriptComponent/734b87ef-6182-4719-b71d-1e2e100c328f>
-  PrefabRemaps:
-    []
-  Name: WebView
-  Enabled: true
-  ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
-  ScriptInputsDefault:
-    resolution: true
-    userAgent: true
-    poke: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      url: "https://MY_TUNNE.net/camerafeed"
-      resolution: !<Vec2> {x: 600.000000, y: 800.000000}
-      userAgent: ""
-      poke: true
   ScriptTypes:
     "":
       {}
@@ -7223,7 +7228,7 @@
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 12.000000, y: 16.000000, z: 1.000000}
+    scale: {x: 102.400002, y: 76.800003, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -8641,6 +8646,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/9caee126-f2d1-4372-a0d8-4d0c95467614>
+  PrefabRemaps:
+    []
+  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 102.400002, y: 76.800003, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1997e093-9dc9-4eee-a341-a79221e1def5
 - !<SceneObject/9dc93b02-8797-4f30-be2c-2900453c0630>
   PrefabRemaps:
     []
@@ -9852,14 +9872,13 @@
   Enabled: true
   ScriptAsset: !<reference> c3f0c1b7-3bcd-436a-9727-a725cf205970
   ScriptInputsDefault:
-    resolution: true
     poke: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       url: "https://MY_RTSP_TUNNEL/"
-      resolution: !<Vec2> {x: 600.000000, y: 800.000000}
+      resolution: !<Vec2> {x: 1024.000000, y: 768.000000}
       userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
       poke: true
   ScriptTypes:
@@ -10549,6 +10568,21 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<SceneObject/ba63d740-5bc9-4574-90d8-02a0469d6ded>
+  PrefabRemaps:
+    []
+  Name: "WebView dwsvc [CHANGE URL TO YOUR TUNNEL] - experimental fixed"
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: -35.000000, y: -30.000000, z: -200.000000}
+    rotation: {x: 0.000000, y: 45.000000, z: 0.000000}
+    scale: {x: 102.400002, y: 76.800003, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6e0daf57-775e-46ba-ac5a-f498c751f5db
 - !<ScriptComponent/bae3eb26-643a-4138-a20e-3419df5b6f87>
   PrefabRemaps:
     []
@@ -10789,9 +10823,7 @@
   Enabled: true
   ScriptAsset: !<reference> 94ea82ba-1d42-4617-b71f-c92262f5960b
   ScriptInputsDefault:
-    border: true
     constantPadding: true
-    allowScaling: true
     autoScaleContent: true
     relativeZ: true
     isContentInteractable: true
@@ -10806,10 +10838,10 @@
   ScriptInputs:
     "":
       autoShowHide: false
-      innerSize: !<Vec2> {x: 16.000000, y: 32.000000}
-      border: !<float> 4.000000
+      innerSize: !<Vec2> {x: 15.000000, y: 15.000000}
+      border: !<float> 50.000000
       constantPadding: !<Vec2> {x: 0.000000, y: 0.000000}
-      allowScaling: true
+      allowScaling: false
       autoScaleContent: true
       relativeZ: false
       isContentInteractable: false

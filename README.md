@@ -119,6 +119,12 @@ See: https://ngrok.com/docs/getting-started/
 
 The reason this approach is preferred is it is very stable.  The only downside is it is a paid service.  I will document other options in the future.
 
+### No Tunnels
+
+If you choose not to use a Tunnel to get to your desktop, you will need to be on the latest May 2025 release of SnapOS or later, as this is a relatively new feature.  What it means is you can access a webview or remote service without requiring an HTTPS connection.  In theory, you will still need a valid certificate if you choose to use a domain that in on an insecure connection (WebView probably doesn't handle exceptions properly).  But for certain, an IP address will work. This isn't as easy to manage because IP addresses are hard to remember, and may change over time.
+
+A special note for local networks: you will really need to understand your home / office / lab / cafe network if you are using local networking.  The challenges that arise are numerous.  But generally, your Spectacles and your Desk Window server need to be on the same network.  If you aren't sure, this approach is not recommended.  Secondly, if ports are being blocked, it will be up to you to manage exposing ports you may need.  Again, if you aren't sure what this means, you should consider using the tunnel approach.
+
 ### DesktopWindow Spectacles Lens
 
 It is easiest if you search in the scene object view and search for WebView.  Edit the component in the property editor and set the URL to your runnel.
@@ -132,6 +138,16 @@ You can edit the URL section of this comonent to be:
 
 Unfortunately the setups vary, and your URL for your tunnel might include a port number.  I had some problems with the tunnel if I exposed it on a non-standard port.
 
+### WebView and Component Frame UI
+
+Some general notes, the Container Frame UI has some features which aren't obvious:
+
+- Border is necessary and is the thickness of the area that is like an internal frame between the contained component. Set to 50 seems to be fine. If you make it 100 it's huge, like a super thick picture frame.
+- Inner size : says it's the size of the inner content area. Set to 15. Not really sure what it does
+- Allow Scaling: if you have this on, it is possible to pinch zoom in/out on the contained contents ... may be a little hard to control
+- Min and Max size: says this is the max / min you would like the container resized too. Presumably this is a limit, so you can't overexpand the container
+
+
 ## Run
 
 Launch the DeskWindow Lens.  If you have configured the URLs correctly and tunnel, you can see the video in your browser.
@@ -143,15 +159,16 @@ Launch the DeskWindow Lens.  If you have configured the URLs correctly and tunne
 - reliability: tunnels are often flaky on a slow link.  "Beware".
 - complexity: tunnels can be a bit complicated.  
 - rotation: the rotation of the image may vary depending on the desktop system.  You may need to edit the template to chage the rotation.
-- https: Snap Specs don't support a whitelist for inesecure hosts.  
 - Webview layout is strange ... need to work on the width and scale
-- The screenshot that is  taken is different on Linux vs Mac.  The mac will always overwrite its screengrabs.  linux will generate new unique files.  Both are problematic in different ways.  
+- The screenshot that is  taken is different on Linux vs Mac.  Images may get rotated with dwsvc.
 - The Windows screenshot isn't implemented yet.
-- Browser "chrome": ideally the input to the tunnel URL has a GUI input that is possible, though it might be hard to type in.  I'd like to be able to reposition the browser.  I need to put it in a component view.
+- Browser "chrome": ideally the input to the tunnel URL has a GUI input that is possible, though it might be hard to type in. 
 - UI Input would be really cool
+- You may decide you want to turn on the scaling where you can pinch and drag the size of the webview
 - Need a way to add N tunnels, so you can view multiple sources
-- Note: this is a total hack.  It's understood the inefficiency.  The next versions will move to RTSP, under development.  RTSP adds some complexity for set up, but there is a good way to stream via the browser which is seen to work in the Snap WebView. 
+- Note: the dwsvc is a total hack.  It's understood the inefficiency.  If you are unhappy with it, you can take the extra time to look at how to use deskstreamsvc.  RTSP adds some complexity for set up, but there is a good way to stream via the browser which is seen to work in the Snap WebView. 
 - Security implications: ultimiately something like VNC has a good answer for securing the screen.  A good alternative is to use VNC viewer.
+- Adding audio support ... it would be nice to get the stream of audio off your desktop as well, possible with ffmpeg.
 
 ## Troubleshooting
 
