@@ -69,7 +69,7 @@ To run on the spectacles, you need to set up a tunnel.  See the next step.
 
 ### deskstreamsvc (advanced)
 
-There is a one time setup, really nothing to build unless you decide to build your dependencies from scratch (maybe in a Yocto Linux setup).   The script used to pull dependencies is called:
+There is a one time setup, really nothing to build unless you decide to build your dependencies from scratch (maybe in a Yocto Linux setup).   Make sure you have Node.js 20 installed.  Using a node installation manager like NVM or N makes the most sense.  The script used to pull dependencies is called:
 
 setup_deps.sh
 
@@ -78,6 +78,8 @@ For linux arm64 systems, it is called setup_deps_aarch64.sh
 The directory deskstreamsvc contains different platforms: mac, windows, linux. First thing to do is make sure you have node20 installed.  I use nvm for this, but on linux you might use "n" instead.
 
 Note: on ARM devices you will probably need to modify the setup.  You can hire me if you need help integrating this into your projects :p .  The Linux setup will be Ubuntu centric, however, behind the scenes I will have this running on some other more obscure Linux ARM platforms as well (think wearable devices).
+
+For Windows users: you should install git bash.  This project won't provide powershell or batch scripts.  Don't worry, if you have git, you have git bash.  When running nodejs, ffmpeg or mediamtx, you may need to accept a dialog prompt to allow the programs to use the network.  Allow.
 
 When it comes to FFMPEG, you really need to think about how you install it, or if you build it from scratch, or if you take the GPL version or the LGPL version.  I cannot make those decisions for anyone.  For mac, the recommendation is to install from brew.  On the other platforms, the recommendation is to grab a pre-built binary from here:
 
@@ -93,14 +95,14 @@ Note: the devices, especially USB devices like webcams, can change their mapping
 
 The order to run things for camera streaming:
 
-- run_mediamtx.sh
+- run mediamtx: ./mediamtx
 - run_ffmpeg_camera.sh
 - run_rtsprelay.sh
 - manually run your tunnel (see below)
 
 The order to run things for desktop streaming:
 
-- run_mediamtx.sh
+- run mediamtx: ./mediamtx
 - run_ffmpeg_screencapture.sh
 - run_rtsprelay.sh
 - manually run your tunnel (see below)
