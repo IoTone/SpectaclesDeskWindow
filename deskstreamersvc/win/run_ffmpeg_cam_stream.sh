@@ -7,4 +7,5 @@
 #
 # ffmpeg -f avfoundation -list_devices true -i ""
 # change to your camera, may not be 0 or 1
-ffmpeg -f avfoundation -framerate 30 -video_size 640x480 -i "1:none" -c:v libx264 -preset ultrafast -tune zerolatency -f rtsp rtsp://localhost:8554/test
+./ffmpeg-master-latest-win64-gpl/bin/ffmpeg -y -f dshow -i video="c922 Pro Stream Webcam" -framerate 30 -video_size 640x480 -c:v libx264 -preset ultrafast -tune zerolatency -f rtsp rtsp://localhost:8554/test
+
