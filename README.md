@@ -172,6 +172,10 @@ Launch the DeskWindow Lens.  If you have configured the URLs correctly and tunne
 - Security implications: ultimiately something like VNC has a good answer for securing the screen.  A good alternative is to use VNC viewer.
 - Adding audio support ... it would be nice to get the stream of audio off your desktop as well, possible with ffmpeg.
 
+## Related Projects
+
+- https://github.com/JoshuaLevi/SpecDesk ⭐
+
 ## Troubleshooting
 
 Please file bugs.  I welcome pull requests.
